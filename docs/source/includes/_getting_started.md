@@ -14,7 +14,7 @@ particular size.
 
 syntax = "proto3";
 
-package code.justin.tv.example.haberdasher;
+package twirp.example.haberdasher;
 option go_package = "haberdasher";
 
 // Haberdasher service makes hats for clients.
@@ -72,7 +72,7 @@ type Haberdasher interface {
 }
 ```
 
-Inside `habserdasher.twirp.go` you should find the following interface along with code to 
+Inside `haberdasher.twirp.go` you should find the following interface along with code to 
 instantiate clients and servers.
 
 
@@ -111,9 +111,9 @@ Our server implementation `Server` must implement all methods in the interface g
 Here we implement the function `MakeHat` that takes in `size *pb.Size` and outputs a new `&pb.Hat{}`.
 
 Twirp servers can handle both
-[JSON and Protobuf](https://git-aws.internal.justin.tv/common/twirp/wiki/Protobuf-and-JSON)
+[JSON and Protobuf](https://github.com/twitchtv/twirp/wiki/Protobuf-and-JSON)
 requests, distinguishing them by their Content-Type header. Twirp servers can also be configured with
-[Server Hooks](https://git-aws.internal.justin.tv/common/twirp/wiki/Server-Hooks).
+[Server Hooks](https://github.com/twitchtv/twirp/wiki/Server-Hooks).
 
 <div class="clear"></div>
 

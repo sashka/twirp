@@ -3,10 +3,10 @@
 > If you are using [retool](https://github.com/twitchtv/retool), update using the following command:
 
 ```bash
-$ retool upgrade code.justin.tv/common/twirp/protoc-gen-twirp v4.4.0
+$ retool upgrade github.com/twitchtv/twirp/protoc-gen-twirp v5.0.0
 ```
 
-Twirp releases are tagged with semantic versioning and releases are managed by Github. See the [releases](https://git-aws.internal.justin.tv/common/twirp/releases) page.
+Twirp releases are tagged with semantic versioning and releases are managed by Github. See the [releases](https://github.com/twitchtv/twirp/releases) page.
 
 To stay up to date, you update protoc-gen-twirp and regenerate your code. It's simple with [retool](https://github.com/twitchtv/retool).
 
@@ -15,8 +15,8 @@ To stay up to date, you update protoc-gen-twirp and regenerate your code. It's s
 > Use `go install` to update twirp if you don't have retool:
 
 ```golang
-$ cd $GOPATH/src/code.justin.tv/common/twirp
-$ git checkout v4.4.0
+$ cd $GOPATH/src/github.com/twitchtv/twirp
+$ git checkout v5.0.0
 $ go install ./protoc-gen-twirp
 ```
 

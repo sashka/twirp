@@ -44,7 +44,7 @@ It must be in your `$PATH` for the protocol compiler, `protoc`, to find it, so y
 > Install the Twirp compiler plugin `protoc-gen-twirp`:
 
 ```bash
-$ go get -u code.justin.tv/common/twirp/protoc-gen-twirp
+$ go get -u github.com/twitchtv/twirp/protoc-gen-twirp
 ```
 
 Installing `protoc-gen-twirp` will add the executable to your `$GOBIN` as well. When `protoc` is run, it will look for plugins such as `protoc-gen-twirp` and `protoc-gen-go` in your `$PATH`.
