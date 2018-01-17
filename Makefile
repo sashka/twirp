@@ -32,7 +32,7 @@ setup:
 
 # Make commands for twirp docs
 setup_docs:
-	echo "Ruby >= 2.3.1 must be installed"
+	@echo "Ruby >= 2.3.1 must be installed"
 	gem install bundler
 	bundler install --gemfile docs/Gemfile
 
